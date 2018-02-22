@@ -25,4 +25,4 @@ Robots for Lucifer's Ensemble LOA project
 [BOM Spreadsheet](https://docs.google.com/spreadsheets/d/1H9ps_YcNi2U3gRdNnN2o0KlRJA077tAUcP5HMw0Rx48/edit?usp=sharing)
 
 ## SCHEMATICS
-[Legba board](../blob/master/schematics/Legba_schematic_rev1.pdf)
+[Legba board](../schematics/Legba_schematic_rev1.pdf)
