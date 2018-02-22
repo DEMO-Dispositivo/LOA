@@ -1,5 +1,7 @@
 # LOA
-Robots for Lucifer's Ensemble LOA project
+Robots for Lucifer's Ensemble LOA project.
+Playing 3 drums made using Lavacolhos techniques inspired by the Arada drums and other percussions.
+The boards are Arduino-based and can receive MIDI through DIN cable or play via SD Card.
 
 ## BOARDS
 
@@ -26,3 +28,33 @@ Robots for Lucifer's Ensemble LOA project
 
 ## SCHEMATICS
 [Legba board](../master/schematics/Legba_schematic_rev1.pdf)
+
+## MIDI Note Mapping
+### Legba
+- Note 0: solenoid 1
+- Note 2: solenoid 2
+- Note 4: solenoid 3
+- Note 5: solenoid/motor 4
+- Note 7: solenoid/motor 5
+- Note/CC 9: servo 1
+- Note 36: solenoid 6
+- Note 38: solenoid 7 
+- Note 40: solenoid 8
+- Note/CC 43: servo 2
+- Note/CC 45: servo 3
+
+### Damballah
+- Note 12: solenoid 1
+- Note 14: solenoid 2
+- Note 16: solenoid 3
+- Note 17: solenoid/motor 4
+- Note 19: solenoid/motor 5
+- Note 21: servo 1
+
+### Samedi
+- Note 24: solenoid 1
+- Note 26: solenoid 2
+- Note 28: solenoid 3
+- Note 29: solenoid/motor 4
+- Note 31: solenoid/motor 5
+- Note 33: servo 1
