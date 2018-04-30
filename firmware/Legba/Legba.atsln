@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "Legba", "Legba\Legba\Legba.cppproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
 EndProject
-Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "ArduinoCore", "Legba\ArduinoCore\ArduinoCore.cppproj", "{89882ADB-B025-4E6D-9BBD-2F0DC118AC6B}"
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "ArduinoCore", "Legba\ArduinoCore\ArduinoCore.cppproj", "{766A6BB4-29AD-4BA8-9596-B6B36DAEC3EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.Build.0 = Debug|AVR
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.ActiveCfg = Release|AVR
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.Build.0 = Release|AVR
-		{89882ADB-B025-4E6D-9BBD-2F0DC118AC6B}.Debug|AVR.ActiveCfg = Debug|AVR
-		{89882ADB-B025-4E6D-9BBD-2F0DC118AC6B}.Debug|AVR.Build.0 = Debug|AVR
-		{89882ADB-B025-4E6D-9BBD-2F0DC118AC6B}.Release|AVR.ActiveCfg = Release|AVR
-		{89882ADB-B025-4E6D-9BBD-2F0DC118AC6B}.Release|AVR.Build.0 = Release|AVR
+		{766A6BB4-29AD-4BA8-9596-B6B36DAEC3EF}.Debug|AVR.ActiveCfg = Debug|AVR
+		{766A6BB4-29AD-4BA8-9596-B6B36DAEC3EF}.Debug|AVR.Build.0 = Debug|AVR
+		{766A6BB4-29AD-4BA8-9596-B6B36DAEC3EF}.Release|AVR.ActiveCfg = Release|AVR
+		{766A6BB4-29AD-4BA8-9596-B6B36DAEC3EF}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

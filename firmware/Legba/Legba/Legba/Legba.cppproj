@@ -72,7 +72,7 @@
       <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.150\include</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\EEPROM</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\MIDI_Library</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\MIDI</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\avr</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\nrf52</Value>
@@ -80,6 +80,9 @@
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\samd</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\stm32f4</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\variants\mega</Value>
+      <Value>..\include\libraries\MIDI\examples\RPN_NRPN</Value>
+      <Value>..\include\libraries\MIDI\examples\SimpleSynth</Value>
+      <Value>..\include\libraries\MIDI\src</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
@@ -109,7 +112,7 @@
       <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.150\include</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\EEPROM</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\MIDI_Library</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\MIDI</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\avr</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\nrf52</Value>
@@ -117,6 +120,9 @@
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\samd</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\stm32f4</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\variants\mega</Value>
+      <Value>..\include\libraries\MIDI\examples\RPN_NRPN</Value>
+      <Value>..\include\libraries\MIDI\examples\SimpleSynth</Value>
+      <Value>..\include\libraries\MIDI\src</Value>
     </ListValues>
   </avrgcccpp.compiler.directories.IncludePaths>
   <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
@@ -171,7 +177,7 @@
       <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.150\include</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\EEPROM</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\MIDI_Library</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\MIDI</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\avr</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\nrf52</Value>
@@ -179,6 +185,9 @@
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\samd</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\stm32f4</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\variants\mega</Value>
+      <Value>..\include\libraries\MIDI\examples\RPN_NRPN</Value>
+      <Value>..\include\libraries\MIDI\examples\SimpleSynth</Value>
+      <Value>..\include\libraries\MIDI\src</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
@@ -208,7 +217,7 @@
       <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.150\include</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\EEPROM</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\MIDI_Library</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\MIDI</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\avr</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\nrf52</Value>
@@ -216,6 +225,9 @@
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\samd</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\stm32f4</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\variants\mega</Value>
+      <Value>..\include\libraries\MIDI\examples\RPN_NRPN</Value>
+      <Value>..\include\libraries\MIDI\examples\SimpleSynth</Value>
+      <Value>..\include\libraries\MIDI\src</Value>
     </ListValues>
   </avrgcccpp.compiler.directories.IncludePaths>
   <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
@@ -242,7 +254,55 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="include\libraries\MIDI\examples\RPN_NRPN\utility.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\MIDI\examples\SimpleSynth\noteList.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\MIDI\examples\SimpleSynth\pitches.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\MIDI\src\MIDI.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\MIDI\src\MIDI.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\MIDI\src\midi_Defs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\MIDI\src\midi_Message.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\MIDI\src\midi_Namespace.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\MIDI\src\midi_RingBuffer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\MIDI\src\midi_RingBuffer.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\MIDI\src\midi_Settings.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\MIDI\src\midi_UsbDefs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\MIDI\src\midi_UsbTransport.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\MIDI\src\midi_UsbTransport.hpp">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Sketch.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\MIDI\examples\SimpleSynth\noteList.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\MIDI\src\MIDI.cpp">
       <SubType>compile</SubType>
     </Compile>
     <Content Include="readme.html">
@@ -251,9 +311,24 @@
   <ItemGroup>
     <ProjectReference Include="..\ArduinoCore\ArduinoCore.cppproj">
       <Name>ArduinoCore</Name>
-      <Project>89882adb-b025-4e6d-9bbd-2f0dc118ac6b</Project>
+      <Project>766a6bb4-29ad-4ba8-9596-b6b36daec3ef</Project>
       <Private>True</Private>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="include\" />
+    <Folder Include="include\libraries\" />
+    <Folder Include="include\libraries\MIDI\" />
+    <Folder Include="include\libraries\MIDI\examples\" />
+    <Folder Include="include\libraries\MIDI\examples\RPN_NRPN\" />
+    <Folder Include="include\libraries\MIDI\examples\SimpleSynth\" />
+    <Folder Include="include\libraries\MIDI\src\" />
+    <Folder Include="src\" />
+    <Folder Include="src\libraries\" />
+    <Folder Include="src\libraries\MIDI\" />
+    <Folder Include="src\libraries\MIDI\examples\" />
+    <Folder Include="src\libraries\MIDI\examples\SimpleSynth\" />
+    <Folder Include="src\libraries\MIDI\src\" />
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>
