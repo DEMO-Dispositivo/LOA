@@ -157,6 +157,6 @@ $RECYCLE.BIN/
 #############
 _*
 _/
-firmware/Legba/Legba/ArduinoCore/
-firmware/Legba/Legba/Legba/include/libraries/
-firmware/Legba/Legba/Legba/src/libraries/
+firmware/Legba_firmware/Legba_firmware/ArduinoCore/
+firmware/Legba_firmware/Legba_firmware/Legba_firmware/include/libraries/
+firmware/Legba_firmware/Legba_firmware/Legba_firmware/src/libraries/
