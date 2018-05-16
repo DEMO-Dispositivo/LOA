@@ -13,8 +13,8 @@
     <ArduinoProjectType>Sketch</ArduinoProjectType>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <Name>Legba</Name>
-    <RootNamespace>Legba</RootNamespace>
+    <Name>Legba_firmware</Name>
+    <RootNamespace>Legba_firmware</RootNamespace>
     <ArduinoIdeDir>C:\Program Files (x86)\Arduino</ArduinoIdeDir>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
@@ -27,7 +27,7 @@
     <OverrideVtorValue />
     <BootSegment>2</BootSegment>
     <eraseonlaunchrule>1</eraseonlaunchrule>
-    <AssemblyName>Legba</AssemblyName>
+    <AssemblyName>Legba_firmware</AssemblyName>
     <ResetRule>0</ResetRule>
     <EraseKey />
     <AsfFrameworkConfig>
@@ -59,7 +59,7 @@
     <ListValues>
       <Value>NDEBUG</Value>
       <Value>F_CPU=16000000L</Value>
-      <Value>ARDUINO=10805</Value>
+      <Value>ARDUINO=10605</Value>
       <Value>ARDUINO_AVR_MEGA2560</Value>
       <Value>ARDUINO_ARCH_AVR</Value>
       <Value>USB_VID=0x2341</Value>
@@ -71,18 +71,19 @@
     <ListValues>
       <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.150\include</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\EEPROM</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\eeprom</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\MIDI</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\avr</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\nrf52</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\sam</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\samd</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\stm32f4</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\variants\mega</Value>
       <Value>..\include\libraries\MIDI\examples\RPN_NRPN</Value>
       <Value>..\include\libraries\MIDI\examples\SimpleSynth</Value>
       <Value>..\include\libraries\MIDI\src</Value>
+      <Value>..\include\libraries\Servo\src</Value>
+      <Value>..\include\libraries\Servo\src\avr</Value>
+      <Value>..\include\libraries\Servo\src\sam</Value>
+      <Value>..\include\libraries\EEPROM</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
@@ -92,14 +93,13 @@
   <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
   <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
   <avrgcc.compiler.warnings.InhibitAllWarnings>True</avrgcc.compiler.warnings.InhibitAllWarnings>
-  <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -std=gnu11</avrgcc.compiler.miscellaneous.OtherFlags>
   <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
   <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
   <avrgcccpp.compiler.symbols.DefSymbols>
     <ListValues>
       <Value>NDEBUG</Value>
       <Value>F_CPU=16000000L</Value>
-      <Value>ARDUINO=10805</Value>
+      <Value>ARDUINO=10605</Value>
       <Value>ARDUINO_AVR_MEGA2560</Value>
       <Value>ARDUINO_ARCH_AVR</Value>
       <Value>USB_VID=0x2341</Value>
@@ -111,18 +111,19 @@
     <ListValues>
       <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.150\include</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\EEPROM</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\eeprom</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\MIDI</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\avr</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\nrf52</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\sam</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\samd</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\stm32f4</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\variants\mega</Value>
       <Value>..\include\libraries\MIDI\examples\RPN_NRPN</Value>
       <Value>..\include\libraries\MIDI\examples\SimpleSynth</Value>
       <Value>..\include\libraries\MIDI\src</Value>
+      <Value>..\include\libraries\Servo\src</Value>
+      <Value>..\include\libraries\Servo\src\avr</Value>
+      <Value>..\include\libraries\Servo\src\sam</Value>
+      <Value>..\include\libraries\EEPROM</Value>
     </ListValues>
   </avrgcccpp.compiler.directories.IncludePaths>
   <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
@@ -132,7 +133,6 @@
   <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
   <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
   <avrgcccpp.compiler.warnings.InhibitAllWarnings>True</avrgcccpp.compiler.warnings.InhibitAllWarnings>
-  <avrgcccpp.compiler.miscellaneous.OtherFlags>-std=gnu++11</avrgcccpp.compiler.miscellaneous.OtherFlags>
   <avrgcccpp.linker.libraries.Libraries>
     <ListValues>
       <Value>libm</Value>
@@ -164,7 +164,7 @@
     <ListValues>
       <Value>DEBUG</Value>
       <Value>F_CPU=16000000L</Value>
-      <Value>ARDUINO=10805</Value>
+      <Value>ARDUINO=10605</Value>
       <Value>ARDUINO_AVR_MEGA2560</Value>
       <Value>ARDUINO_ARCH_AVR</Value>
       <Value>USB_VID=0x2341</Value>
@@ -176,18 +176,19 @@
     <ListValues>
       <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.150\include</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\EEPROM</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\eeprom</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\MIDI</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\avr</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\nrf52</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\sam</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\samd</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\stm32f4</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\variants\mega</Value>
       <Value>..\include\libraries\MIDI\examples\RPN_NRPN</Value>
       <Value>..\include\libraries\MIDI\examples\SimpleSynth</Value>
       <Value>..\include\libraries\MIDI\src</Value>
+      <Value>..\include\libraries\Servo\src</Value>
+      <Value>..\include\libraries\Servo\src\avr</Value>
+      <Value>..\include\libraries\Servo\src\sam</Value>
+      <Value>..\include\libraries\EEPROM</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
@@ -197,14 +198,13 @@
   <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
   <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
   <avrgcc.compiler.warnings.InhibitAllWarnings>True</avrgcc.compiler.warnings.InhibitAllWarnings>
-  <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -std=gnu11</avrgcc.compiler.miscellaneous.OtherFlags>
   <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
   <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
   <avrgcccpp.compiler.symbols.DefSymbols>
     <ListValues>
       <Value>DEBUG</Value>
       <Value>F_CPU=16000000L</Value>
-      <Value>ARDUINO=10805</Value>
+      <Value>ARDUINO=10605</Value>
       <Value>ARDUINO_AVR_MEGA2560</Value>
       <Value>ARDUINO_ARCH_AVR</Value>
       <Value>USB_VID=0x2341</Value>
@@ -216,18 +216,19 @@
     <ListValues>
       <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.150\include</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\EEPROM</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\eeprom</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\MIDI</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\avr</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\nrf52</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\sam</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\samd</Value>
-      <Value>%24(ProjectDir)\..\ArduinoCore\include\libraries\Servo\stm32f4</Value>
       <Value>%24(ProjectDir)\..\ArduinoCore\include\variants\mega</Value>
       <Value>..\include\libraries\MIDI\examples\RPN_NRPN</Value>
       <Value>..\include\libraries\MIDI\examples\SimpleSynth</Value>
       <Value>..\include\libraries\MIDI\src</Value>
+      <Value>..\include\libraries\Servo\src</Value>
+      <Value>..\include\libraries\Servo\src\avr</Value>
+      <Value>..\include\libraries\Servo\src\sam</Value>
+      <Value>..\include\libraries\EEPROM</Value>
     </ListValues>
   </avrgcccpp.compiler.directories.IncludePaths>
   <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
@@ -237,7 +238,6 @@
   <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
   <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
   <avrgcccpp.compiler.warnings.InhibitAllWarnings>True</avrgcccpp.compiler.warnings.InhibitAllWarnings>
-  <avrgcccpp.compiler.miscellaneous.OtherFlags>-std=gnu++11</avrgcccpp.compiler.miscellaneous.OtherFlags>
   <avrgcccpp.linker.libraries.Libraries>
     <ListValues>
       <Value>libm</Value>
@@ -254,6 +254,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="GLOBALS.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\EEPROM\EEPROM.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="include\libraries\MIDI\examples\RPN_NRPN\utility.h">
       <SubType>compile</SubType>
     </Compile>
@@ -296,6 +302,15 @@
     <Compile Include="include\libraries\MIDI\src\midi_UsbTransport.hpp">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="include\libraries\Servo\src\avr\ServoTimers.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\Servo\src\sam\ServoTimers.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\Servo\src\Servo.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Sketch.cpp">
       <SubType>compile</SubType>
     </Compile>
@@ -305,30 +320,45 @@
     <Compile Include="src\libraries\MIDI\src\MIDI.cpp">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="src\libraries\Servo\src\avr\Servo.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\Servo\src\sam\Servo.cpp">
+      <SubType>compile</SubType>
+    </Compile>
     <Content Include="readme.html">
     </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ArduinoCore\ArduinoCore.cppproj">
       <Name>ArduinoCore</Name>
-      <Project>766a6bb4-29ad-4ba8-9596-b6b36daec3ef</Project>
+      <Project>7642777d-553d-4cc9-a1fb-4d8e9ec3ada3</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="include\" />
     <Folder Include="include\libraries\" />
+    <Folder Include="include\libraries\EEPROM\" />
     <Folder Include="include\libraries\MIDI\" />
     <Folder Include="include\libraries\MIDI\examples\" />
     <Folder Include="include\libraries\MIDI\examples\RPN_NRPN\" />
     <Folder Include="include\libraries\MIDI\examples\SimpleSynth\" />
     <Folder Include="include\libraries\MIDI\src\" />
+    <Folder Include="include\libraries\Servo\" />
+    <Folder Include="include\libraries\Servo\src\" />
+    <Folder Include="include\libraries\Servo\src\avr\" />
+    <Folder Include="include\libraries\Servo\src\sam\" />
     <Folder Include="src\" />
     <Folder Include="src\libraries\" />
     <Folder Include="src\libraries\MIDI\" />
     <Folder Include="src\libraries\MIDI\examples\" />
     <Folder Include="src\libraries\MIDI\examples\SimpleSynth\" />
     <Folder Include="src\libraries\MIDI\src\" />
+    <Folder Include="src\libraries\Servo\" />
+    <Folder Include="src\libraries\Servo\src\" />
+    <Folder Include="src\libraries\Servo\src\avr\" />
+    <Folder Include="src\libraries\Servo\src\sam\" />
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>
