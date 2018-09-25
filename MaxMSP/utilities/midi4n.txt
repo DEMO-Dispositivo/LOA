@@ -1,0 +1,14 @@
+format=0 tracks=1 division=96
+# TRACK 0
+
+BA    1   CR         0   TR  0   CH 16   Text type 3: ""
+BA    1   CR         0   TR  0   CH 16   Time signature 4/4, clocks/mtick 36, crotchets/32ndnote 8
+BA    1   CR         0   TR  0   CH 16   Time signature 4/4, clocks/mtick 36, crotchets/32ndnote 8
+BA    1   CR         0   TR  0   CH  1   NT  C             1/2   von=100
+BA    1   CR         1   TR  0   CH  1   NT  C             1/2
+BA    1   CR         2   TR  0   CH  1   NT  C             1/2
+BA    1   CR         3   TR  0   CH  1   NT  C             1/2
+BA    1   CR     3+1/2   TR  0   CH 16   End of track
+
+# Successfully parsed
+# Duration = 1.75 seconds
