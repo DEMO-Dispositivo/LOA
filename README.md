@@ -59,6 +59,10 @@ The boards are Arduino-based and can receive MIDI through DIN cable or play via 
 - Note 31: solenoid/motor 5
 - Note 33: servo 1
 
+## Special thanks to
+- Américo Simões
+- Tiago Fróis
+
 [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
 
 This work is licensed under a
