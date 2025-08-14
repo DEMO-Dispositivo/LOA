@@ -62,6 +62,9 @@ The boards are Arduino-based and can receive MIDI through DIN cable or play via 
 ## Special thanks to
 - Américo Simões
 - Tiago Fróis
+- Gil MAC and Cláudio Vidal
+- FEUP (Faculty of Engineering - University of Porto)
+- FCT (Foundation for Science and Technology)
 
 [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
 
